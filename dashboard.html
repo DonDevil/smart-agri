@@ -1,0 +1,61 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        
+        <link rel="stylesheet" href="dashboard.css">
+        <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3"></script>
+
+    </head>
+    <body>
+        
+    <div class="navbar">
+        <div class="navbar-heading">
+            <h3>Dashboard</h3>
+        </div>
+
+        <!-- Lottie Icon on the Right -->
+        <div class="dropdown">
+            <lottie-player class="dropbtn" src="https://raw.githubusercontent.com/DonDevil/hosted-files/main/menu1.json"  
+                        background="transparent"  
+                        speed="1"  
+                        style="width: 50px; height: 50px;"  hover>
+            </lottie-player>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="index.html">About</a>
+            </div>
+        </div>
+    </div>
+
+        <div class="bottom-text">
+            <div class="card-grid">
+                <div class="card" >
+                    <h3>Temerature</h3>
+                    <p>Temperature of the field</p>
+                    <lottie-player id="lottie-file" src="https://raw.githubusercontent.com/DonDevil/hosted-files/main/meter1.json" autoplay></lottie-player>
+                </div>
+                <div class="card">
+                    <h3>Air Humidity</h3>
+                    <p>Moisture Level of air</p>
+                    <lottie-player id="lottie-file" src="https://raw.githubusercontent.com/DonDevil/hosted-files/main/meter1.json" autoplay></lottie-player>
+                </div>
+                <div class="card">
+                    <h3>Soil Moisture</h3>
+                    <p>Moisture level of ground</p>
+                    <lottie-player id="lottie-file" src="https://raw.githubusercontent.com/DonDevil/hosted-files/main/meter1.json" autoplay></lottie-player>
+                </div>
+            </div>
+            <div class="card" style="margin: 0 10%;">
+                <canvas id="agriChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+        <script src="dashboard.js"></script>
+    </body>
+</html>
